@@ -5,6 +5,9 @@
     box-sizing: border-box;
     font-family: "poppins", "sans-serif";
 }
+body{
+    background-color: #faf4f5;
+}
 :root{
     --white-color:#fff;
     --dark-color:#252525;
@@ -117,21 +120,21 @@ header .navbarSection{
         --font-size-xxl:1.8rem;
     }
 
-    .navbar :where(#menu-close-button, #menu-open-button){
+    .navbarSection :where(#menu-close-button, #menu-open-button){
         display: block;
         font-size: var(--font-size-l);
 
     }
-    .navbar #menu-close-button{
+    .navbarSection #menu-close-button{
         position: absolute;
         right: 30px;
         top:30px;
     }
-    .navbar #menu-open-button{
+    .navbarSection #menu-open-button{
         color: var(--white-color);
 
     }
-    .navbar .nav-menu{
+    .navbarSection .nav-menu{
         display: block;
         position:fixed;
         left:-300px;
@@ -145,11 +148,132 @@ header .navbarSection{
         background:var(--white-color);
 
     }
-    .navbar .nav-menu .nav-link{
+    .navbarSection .nav-menu .nav-link{
         color: var(--dark-color);
         font-size:var(--font-size-l);
         display: block;
         margin-top:17px;
 
     }
+}
+
+header .Outside_Menu_pic{
+    align-items: center;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 50px;
+}
+header .Outside_Menu_pic .Menu_Pic{
+     height: 450px;
+     width: 100%;
+     background-image: url('coffee_menu.jpg');
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     
+     padding: 80px 80px;
+     
+}
+main .List{
+ 
+    align-items: center;
+    margin-top: 50px;
+    justify-content: space-evenly;
+    margin-left: 300px;
+    margin-right: 300px;
+
+
+    
+}
+main .List h1{
+    color: #3b141c;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+main .List p{
+    margin-bottom: 20px;
+}
+
+main .List .forMenu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    
+}
+
+main .List .forMenu .Menu_List{
+    flex: 1 1 calc(50% - 50px);
+    background-color: #fff;
+    height: 500px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    text-align: center;
+    margin: 20px;
+}
+main .List .forMenu .Menu_List:hover{
+    transform: scale(1.03);
+}
+main .List .forMenu .Menu_List img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+
+main .List .forMenu .Menu_List h3 {
+    color: #3b141c;
+    margin: 15px 0;
+}
+
+main .List .forMenu .Menu_List button {
+    padding: 10px 15px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+main .List .forMenu .Menu_List button:hover {
+    background-color: var(--secondary-color);
+}
+footer{
+    
+    background-color: #3b141c;
+    height: 300px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+}
+footer .footerMain{
+    width: 50%;
+    color: #fff;
+    text-align: center;
+}
+footer .footerMain .IdLink{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+footer .footerMain .IdLink a{
+    text-decoration: none;
+    color: #faf4f5;
+    padding: auto;
+    border-radius: 8px;
+    background-color: #3b141c;
+    border: none;
+    margin: 5px 0;
+}
+footer .footerMain .IdLink a:hover{
+    background-color: #f3961c;
 }
